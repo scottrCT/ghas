@@ -76,20 +76,20 @@ jobs:
     
       # Build Java
       # https://github.com/marketplace/actions/setup-java-jdk#Usage
-      - if: matrix.language == 'java-kotlin'
-        name: Build Java Version 'X' (See Doc for other details)
-        uses: actions/setup-java@v3
-        with:
-          distribution: 'microsoft' # See 'Supported distributions' for available options
-          java-version: '16'
-      # - run: java HelloWorldApp.java
-      # End of Java Build Example 
+      # - if: matrix.language == 'java-kotlin'
+      #   name: Build Java Version 'X' (See Doc for other details)
+      #   uses: actions/setup-java@v3
+      #   with:
+      #     distribution: 'microsoft' # See 'Supported distributions' for available options
+      #     java-version: '16'
+      # # - run: java HelloWorldApp.java
+      # # End of Java Build Example 
 
-      # Autobuild attempts to build any compiled languages (C/C++, C#, Go, Java, or Swift).
-      # If this step fails, then you should remove it and run the build manually (see below)
-      - if: matrix.language == 'java-kotlin'
-        name: Autobuild
-        uses: github/codeql-action/autobuild@v2
+      # # Autobuild attempts to build any compiled languages (C/C++, C#, Go, Java, or Swift).
+      # # If this step fails, then you should remove it and run the build manually (see below)
+      # - if: matrix.language == 'java-kotlin'
+      #   name: Autobuild
+      #   uses: github/codeql-action/autobuild@v2
 
       # ℹ️ Command-line programs to run using the OS shell.
       # 📚 See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun
